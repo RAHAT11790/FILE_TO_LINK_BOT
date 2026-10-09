@@ -7,10 +7,10 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Rs_link_bots')
 API_ID = int(environ.get('API_ID', '25976192')) ##api id fot t.me.org
 API_HASH = environ.get('API_HASH', '8ba23141980539b4896e5adbc4ffd2e2') #api hash fot t.me.org
-BOT_TOKEN = environ.get('BOT_TOKEN', "8853884009:AAGANmlr0H76Gwb9-mqsZtT2QSw1Nmbg3XA")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
-PORT = environ.get("PORT", "6016") #your hosting site port or use default port
+PORT = environ.get("PORT", "8080") #your hosting site port or use default port
 
 # Online Stream and Download
 MULTI_CLIENT = False
@@ -20,7 +20,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "http://us.monkey-network.xyz:6016/") #hosting site URL
+URL = environ.get("URL", "") #hosting site URL
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003504080537')) #LOG channel id
